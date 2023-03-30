@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  background-color: #22272f;
+  color: #f6f7f9;
+}
+
+header {
+  background-color: #323a45;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+a {
+  color: #f6f7f9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b2b2b2;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
