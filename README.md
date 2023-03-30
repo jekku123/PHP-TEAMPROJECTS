@@ -12,4 +12,4 @@ docker-compose up
 
 ## How to access
 
-http://localhost:1337/projects/
+http://localhost:1337/teamprojects/
