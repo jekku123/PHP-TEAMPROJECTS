@@ -2,8 +2,10 @@
 
 ## Using the image
 
-### On the command line
+run
 
 ```
 docker-compose up
 ```
+
+in terminal
