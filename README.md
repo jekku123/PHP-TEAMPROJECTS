@@ -4,7 +4,7 @@ Docker container for our teamprojects :D
 
 ## Using the image
 
-in terminal run:
+In terminal run:
 
 ```
 docker-compose up
