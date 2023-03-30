@@ -1,10 +1,10 @@
 # PHP-TEAMPROJECTS
 
-- docker container for teamprojects
+Docker container for our teamprojects :D
 
 ## Using the image
 
-- in terminal run
+in terminal run:
 
 ```
 docker-compose up
