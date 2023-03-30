@@ -3,12 +3,12 @@ services:
   php-apache-environment:
     container_name: php-teamprojects
     build:
-      context: ./teamprojects
+      context: ./client
       dockerfile: Dockerfile
     depends_on:
       - db
     volumes:
-      - ./teamprojects/src:/var/www/html/
+      - ./client/src:/var/www/html/
     ports:
       - 1337:80
   db:
