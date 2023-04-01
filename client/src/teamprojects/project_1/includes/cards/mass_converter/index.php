@@ -1,6 +1,6 @@
 <?php include "includes/cards/mass_converter/functions.php"; ?>
 
-<article>
+<article class="card">
     <h2>Mass Converter</h2>
 
 
