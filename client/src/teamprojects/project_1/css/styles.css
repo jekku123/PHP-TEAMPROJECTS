@@ -9,14 +9,13 @@
   background-color: #1d1f25;
 }
 
-.mass-form {
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 35px;
 }
-
-.mass-form input {
+input {
   margin-right: 10px;
 }

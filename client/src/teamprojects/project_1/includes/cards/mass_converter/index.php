@@ -6,11 +6,11 @@
 
     <form method="post" class="mass-form">
         <div class="selections">
-            <input type="text" id="mass" name="mass">
-            <select name="conversion">
+            <input type="text" name="mass">
+            <select name="mass-conversion">
                 <option value="" disabled selected>Choose..</option>
-                <option value="kg-to-g">KG to G</option>
-                <option value="g-to-kg">G to KG</option>
+                <option value="kg-to-g">kg to g</option>
+                <option value="g-to-kg">g to kg</option>
             </select>
         </div>
         <button type="submit">Convert</button>
