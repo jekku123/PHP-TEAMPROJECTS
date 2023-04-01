@@ -8,6 +8,7 @@ body {
   font-family: Arial;
   background-color: #22272f;
   color: #f6f7f9;
+  height: 100vh;
 }
 
 header {

@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <link href="./css/styles.css" rel="stylesheet">
   <link href="../css/styles.css" rel="stylesheet">
-  <title>Miniproject 3</title>
+  <title>Todo</title>
 </head>
 
 <body>
   <header>
-    <h1>Miniproject 3</h1>
+    <h1>Todo</h1>
     <a href="../index.php">Back</a>
   </header>
   <main>

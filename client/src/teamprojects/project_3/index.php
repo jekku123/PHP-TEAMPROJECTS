@@ -3,7 +3,7 @@
 
 <section>
 
-    <h2>Project 3</h2>
+    <h2>Todo</h2>
 
     <?php
     // code here
