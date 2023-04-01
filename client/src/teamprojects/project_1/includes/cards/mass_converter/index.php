@@ -4,13 +4,13 @@
 
     <h2>Mass Converter</h2>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post">
         <label for="kilo">Kilo</label>
         <input type="text" id="kilo" name="kilo">
         <button type="submit">Convert</button>
     </form>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post">
         <label for="gram">Gram</label>
         <input type="text" id="gram" name="gram">
         <button type="submit">Convert</button>
