@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link href="./css/styles.css" rel="stylesheet">
   <link href="../css/styles.css" rel="stylesheet">
+  <link href="./cards/mass_converter/styles.css" rel="stylesheet">
   <title>Converters</title>
 </head>
 

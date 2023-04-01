@@ -1,18 +1,18 @@
 <?php include "includes/cards/mass_converter/functions.php"; ?>
 
 <article>
-
     <h2>Mass Converter</h2>
 
-    <form method="post">
-        <label for="kilo">Kilo</label>
-        <input type="text" id="kilo" name="kilo">
-        <button type="submit">Convert</button>
-    </form>
 
-    <form method="post">
-        <label for="gram">Gram</label>
-        <input type="text" id="gram" name="gram">
+    <form method="post" class="mass-form">
+        <div class="selections">
+            <input type="text" id="mass" name="mass">
+            <select name="conversion">
+                <option value="" disabled selected>Choose..</option>
+                <option value="kg-to-g">KG to G</option>
+                <option value="g-to-kg">G to KG</option>
+            </select>
+        </div>
         <button type="submit">Convert</button>
     </form>
 

@@ -1,27 +1,26 @@
 <?php
 function convertToGrams($kilo)
 {
-    return (int) $kilo * 1000;
+    return (float) $kilo * 1000;
 }
 
 function convertToKilos($gram)
 {
-    return (int) $gram / 1000;
+    return (float) $gram / 1000;
 }
 
 function convertMass()
 {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $kilo = $_POST['kilo'] ?? '';
-        $gram = $_POST['gram'] ?? '';
+        $mass = $_POST['mass'] ?? '';
+        $conversion = $_POST['conversion'] ?? '';
 
-
-        if ($kilo) {
-            return '<span>' . $kilo . 'kg is ' . convertToGrams($kilo) . "g</span>";
-        } else if ($gram) {
-            return '<span>' . $gram . 'g is ' . convertToKilos($gram) . "kg</span>";
-        } else {
-            return '';
+        if ($conversion && $mass) {
+            if ($conversion == 'kg-to-g') {
+                return '<span>' . $mass . 'kg is ' . convertToGrams($mass) . "g</span>";
+            } else {
+                return '<span>' . $mass . 'g is ' . convertToKilos($mass) . "kg</span>";
+            }
         }
     }
 }
