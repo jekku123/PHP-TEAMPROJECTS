@@ -11,6 +11,11 @@ body {
   height: 100vh;
 }
 
+h1,
+h2 {
+  text-shadow: 0px 0px 3px #139eca;
+}
+
 header {
   background-color: #323a45;
   height: 120px;
@@ -61,7 +66,7 @@ input {
 }
 
 input:hover {
-  box-shadow: 0px 0px 8px #f6f7f9;
+  box-shadow: 0px 0px 10px #139eca;
 }
 
 button {
@@ -80,4 +85,31 @@ button:hover {
 
 button:active {
   background-color: #46d1fb;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1d1f25;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px #139eca;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 35px;
+}
+
+input {
+  margin-right: 10px;
 }

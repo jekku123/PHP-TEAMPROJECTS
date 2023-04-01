@@ -3,12 +3,12 @@
 
 <head>
   <?php include "includes/head.php"; ?>
-  <title>Miniprojects</title>
+  <title>Teamprojects</title>
 </head>
 
 <body>
   <header>
-    <h1>Miniprojects</h1>
+    <h1>Teamprojects</h1>
     <nav>
       <ul>
         <li> <a href="project_1/index.php">Converters</a>
