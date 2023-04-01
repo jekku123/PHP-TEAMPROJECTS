@@ -3,7 +3,6 @@
 <article class="card">
     <h2>Mass Converter</h2>
 
-
     <form method="post" class="mass-form">
         <div class="selections">
             <input type="text" name="mass">
