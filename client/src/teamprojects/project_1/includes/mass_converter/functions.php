@@ -1,12 +1,12 @@
 <?php
-function convertToGrams($kilo)
+function convertToGrams($mass)
 {
-    return (float) $kilo * 1000;
+    return (float) $mass * 1000;
 }
 
-function convertToKilos($gram)
+function convertToKilos($mass)
 {
-    return (float) $gram / 1000;
+    return (float) $mass / 1000;
 }
 
 function convertMass()
