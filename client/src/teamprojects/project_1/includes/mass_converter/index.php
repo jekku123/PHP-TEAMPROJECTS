@@ -1,4 +1,4 @@
-<?php include "includes/cards/mass_converter/functions.php"; ?>
+<?php include "includes/mass_converter/functions.php"; ?>
 
 <article class="card">
     <h2>Mass Converter</h2>
