@@ -15,7 +15,7 @@ function convertMass()
         $mass = $_POST['mass'] ?? '';
         $conversion = $_POST['mass-conversion'] ?? '';
 
-        if ($conversion && $mass) {
+        if ($conversion && is_numeric($mass)) {
             if ($conversion == 'kg-to-g') {
                 return '<span>' . round($mass, 2) . 'kg is ' . convertToGrams($mass) . "g</span>";
             } else {

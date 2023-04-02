@@ -15,7 +15,7 @@ function convertSpeed()
         $speed = $_POST['speed'] ?? '';
         $conversion = $_POST['speed-conversion'] ?? '';
 
-        if ($conversion && $speed) {
+        if ($conversion && is_numeric($speed)) {
             if ($conversion == 'kmh-to-ms') {
                 return '<span>' . round($speed, 2) . 'km/h is ' . round(convertToMilliSeconds($speed), 2) . "m/s</span>";
             } else {
