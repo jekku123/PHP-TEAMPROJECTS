@@ -3,6 +3,8 @@
 
 <head>
   <?php include "../includes/head.php"; ?>
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
   <title>Todo</title>
 </head>
 

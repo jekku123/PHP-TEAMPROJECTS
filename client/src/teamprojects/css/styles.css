@@ -50,14 +50,6 @@ main {
   padding: 20px;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
 button {
   background-color: var(--accent-color);
   color: var(--text-color);
@@ -90,39 +82,4 @@ button:active {
 
 .card:hover {
   box-shadow: 0px 0px 15px var(--accent-color);
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 35px;
-}
-
-input,
-select {
-  width: 80px;
-  height: 27px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-
-select {
-  padding-left: 3px;
-}
-
-input:hover {
-  box-shadow: 0px 0px 10px var(--accent-color);
-}
-
-input {
-  padding: 7px;
-  margin-right: 10px;
-}
-
-select:hover {
-  box-shadow: 0px 0px 10px var(--accent-color);
 }

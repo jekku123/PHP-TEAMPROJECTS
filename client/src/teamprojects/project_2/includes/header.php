@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <?php include "../includes/head.php"; ?>
-  <title>Form</title>
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <title>Form practice</title>
 </head>
 
 <body>
