@@ -13,11 +13,11 @@
     <h1>Teamprojects</h1>
     <nav>
       <ul>
-        <li> <a href="project_1/index.php">Converters</a>
+        <li> <a href="converters/index.php">Converters</a>
         </li>
-        <li> <a href="project_2/index.php">Form</a>
+        <li> <a href="form/index.php">Form</a>
         </li>
-        <li> <a href="project_3/index.php">Todo</a>
+        <li> <a href="todo/index.php">Todo</a>
         </li>
       </ul>
     </nav>

@@ -3,17 +3,7 @@
 
 <section>
 
-    <form action="
-    <?
-    if (isset($_POST['submit'])) {
-        if (empty($nameError) && empty($emailError)  && empty($messageError)) {
-            echo 'formdata.php';
-        } else {
-            echo htmlspecialchars($_SERVER["PHP_SELF"]);
-        }
-    }
-    ?>
-    " method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
         <h2>Contact Us</h2>
 
