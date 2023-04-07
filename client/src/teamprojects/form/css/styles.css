@@ -1,15 +1,15 @@
 form {
   color: black;
-  height: 390px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 30px;
 }
 
 form h2 {
-  color: white;
-  font-size: 1.8em;
+  margin-top: 25px;
+  color: var(--text-color);
 }
 
 .input-component {
@@ -28,7 +28,7 @@ label {
 .error {
   position: absolute;
   right: 5px;
-  top: -20px;
+  top: -18px;
   color: red;
   font-size: 0.7rem;
 }
@@ -37,52 +37,50 @@ input,
 textarea {
   font-family: inherit;
   font-size: 16px;
-  width: 300px;
-  background-color: #f6f7f9;
-  padding: 20px;
+  width: 270px;
+  background-color: var(--text-color);
   border-radius: 5px;
   border: none;
-}
-
-input {
-  height: 30px;
+  padding: 10px;
 }
 
 textarea {
-  height: 100px;
+  height: 120px;
 }
 
 input:hover,
 textarea:hover {
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 10px var(--text-color);
 }
 
 input:focus,
 textarea:focus {
   outline: none !important;
-  box-shadow: 0 0 30px white;
+  box-shadow: 0 0 10px var(--text-color);
 }
 
 input:focus + label,
 input:not(:placeholder-shown) ~ label,
 textarea:focus + label,
 textarea:not(:placeholder-shown) ~ label {
-  top: -24px;
+  top: -22px;
   left: 0px;
   font-size: 1em;
-  color: white;
+  color: var(--text-color);
 }
 
 input.invalid,
 textarea.invalid {
-  box-shadow: 0 0 20px red;
+  box-shadow: 0 0 10px red;
 }
 
 input:focus.invalid,
 textarea:focus.invalid {
-  box-shadow: 0 0 30px red;
+  box-shadow: 0 0 10px red;
 }
 
-section {
-  display: inline;
+button {
+  font-size: 1em;
+  padding: 8px 16px;
+  margin: 0;
 }

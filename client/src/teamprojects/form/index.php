@@ -25,7 +25,7 @@
             <span class="error" id="message-error"><?php echo $messageError; ?></span>
         </div>
 
-        <button type="submit" name="submit">Submit</button>
+        <button type="submit" name="submit">SEND</button>
 
     </form>
 
