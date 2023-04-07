@@ -2,8 +2,8 @@
 
 <section>
     <?php
-    echo '<p>Name: ' . $_POST["name"] . '</p>';
-    echo '<p>E-mail: ' . $_POST["email"] . '</p>';
-    echo '<p>Message: ' . $_POST["message"] . '</p>';
+    echo '<p>Name: ' . $name . '</p>';
+    echo '<p>E-mail: ' . $email . '</p>';
+    echo '<p>Message: ' . $message . '</p>';
     ?>
 </section>
