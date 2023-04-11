@@ -3,7 +3,7 @@
 
 <section>
 
-    <form action="index.php" method="post" class="add-todo">
+    <form method="post">
         <input type="text" name='todo'>
         <input type="submit" name="add" value="Add">
     </form>
@@ -13,9 +13,9 @@
         while ($row = mysqli_fetch_assoc($result_all)) {
         ?>
             <div class="todo">
-                <form action="index.php" method="post">
-                    <input name="table-id-<?= $row["id"] ?>" value="<?= $row["id"] ?>" style="display:none">
-                    <input name="table-todo-<?= $row["id"] ?> " value="<?= $row["todo"] ?>">
+                <form method="post">
+                    <input name="id-<?= $row["id"] ?>" value="<?= $row["id"] ?>" style="display:none">
+                    <input name="todo-<?= $row["id"] ?> " value="<?= $row["todo"] ?>">
                     <input type="submit" name="update" value="Update">
                     <input type="submit" name="delete" value="Delete">
                 </form>
