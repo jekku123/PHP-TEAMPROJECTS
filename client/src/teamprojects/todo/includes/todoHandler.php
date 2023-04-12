@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $id = array_values($_POST)[0];
         $todo = array_values($_POST)[1];
 
+
+
         if (!empty($_POST['delete'])) {
             $query = "DELETE FROM todos WHERE id = " . $id;
             mysqli_query($conn, $query);
