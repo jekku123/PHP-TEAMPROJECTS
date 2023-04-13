@@ -10,7 +10,7 @@
 
     <div class="todos">
         <?php
-        while ($row = mysqli_fetch_assoc($todos)) {
+        foreach ($todos as $row) {
         ?>
             <div class="todo">
                 <form method="post">
