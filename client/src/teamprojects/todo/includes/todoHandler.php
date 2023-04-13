@@ -30,4 +30,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $todoQuery = mysqli_query($conn, "SELECT * FROM todos ORDER by id DESC");
-$todos = mysqli_fetch_all($todoQuery);
+$todos = mysqli_fetch_all($todoQuery, MYSQLI_ASSOC);
