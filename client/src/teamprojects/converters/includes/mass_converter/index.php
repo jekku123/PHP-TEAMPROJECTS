@@ -5,7 +5,7 @@
 
     <form method="post" class="mass-form">
         <div class="selections">
-            <input type="text" name="mass">
+            <input type="text" name="mass" placeholder="Weight">
             <select name="mass-conversion">
                 <option value="" disabled selected>Choose..</option>
                 <option value="kg-to-g">kg to g</option>

@@ -5,7 +5,7 @@
 
     <form method="post" class="mass-form">
         <div class="selections">
-            <input type="text" name="speed">
+            <input type="text" name="speed" placeholder="Speed">
             <select name="speed-conversion">
                 <option value="" disabled selected>Choose..</option>
                 <option value="kmh-to-ms">km/h to m/s</option>

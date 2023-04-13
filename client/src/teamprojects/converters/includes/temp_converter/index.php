@@ -5,7 +5,7 @@
 
     <form method="post" class="temp-form">
         <div class="selections">
-            <input type="text" name="temp">
+            <input type="text" name="temp" placeholder="Temp">
             <select name="temp-conversion">
                 <option value="" disabled selected>Choose..</option>
                 <option value="c-to-f">°C to °F</option>

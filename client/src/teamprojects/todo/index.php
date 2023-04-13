@@ -4,7 +4,7 @@
 <section>
 
     <form method="post">
-        <input name='todo'>
+        <input name='todo' placeholder="Insert todo..">
         <input type="submit" name="add" value="ADD" class="btn">
     </form>
 
