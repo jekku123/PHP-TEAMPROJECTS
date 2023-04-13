@@ -29,4 +29,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$todos = mysqli_query($conn, "SELECT * FROM todos ORDER by id DESC");
+$todoQuery = mysqli_query($conn, "SELECT * FROM todos ORDER by id DESC");
+$todos = mysqli_fetch_assoc($todoQuery);
