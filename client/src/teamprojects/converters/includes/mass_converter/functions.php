@@ -1,26 +1,28 @@
 <?php
+
+$converted_mass = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!empty($_POST['mass']) && !empty($_POST['mass-conversion'])) {
+        $mass = $_POST['mass'];
+        $conversion = $_POST['mass-conversion'];
+
+        if (is_numeric($mass)) {
+            if ($conversion == 'kg-to-g') {
+                $converted_mass = convertToGrams($mass);
+            } else {
+                $converted_mass = convertToKilos($mass);
+            }
+        }
+    }
+}
+
 function convertToGrams($mass)
 {
-    return (float) $mass * 1000;
+    return round((float) $mass * 1000, 2);
 }
 
 function convertToKilos($mass)
 {
-    return (float) $mass / 1000;
-}
-
-function convertMass()
-{
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $mass = $_POST['mass'] ?? '';
-        $conversion = $_POST['mass-conversion'] ?? '';
-
-        if ($conversion && is_numeric($mass)) {
-            if ($conversion == 'kg-to-g') {
-                return '<span>' . round($mass, 2) . 'kg is ' . round(convertToGrams($mass), 2) . "g</span>";
-            } else {
-                return '<span>' . round($mass, 2) . 'g is ' . round(convertToKilos($mass), 2) . "kg</span>";
-            }
-        }
-    }
+    return round((float) $mass / 1000, 2);
 }

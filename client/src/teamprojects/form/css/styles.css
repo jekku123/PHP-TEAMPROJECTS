@@ -11,8 +11,21 @@ form h2 {
   margin-top: 25px;
 }
 
+fieldset {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+legend {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+}
+
 .input-component {
   position: relative;
+  border-radius: 5px;
+  min-height: 50px;
 }
 
 label {
@@ -41,11 +54,9 @@ textarea {
   border: none;
   padding: 2px 0px;
   border-style: none none solid none;
-  border-color: var(--text-color);
+  border-color: rgb(189, 188, 188);
   color: var(--text-color);
-}
-
-input {
+  transition: all 0.3s ease;
 }
 
 #growingtextarea {
@@ -56,7 +67,7 @@ input {
 
 input:hover,
 textarea:hover {
-  /* box-shadow: 0 0 10px var(--text-color); */
+  border-color: var(--text-color);
 }
 
 input:focus,
@@ -74,6 +85,11 @@ textarea:not(:placeholder-shown) ~ label {
   left: 0px;
   font-size: 0.7em;
   color: var(--accent-color);
+}
+
+input:not(:focus) + label,
+textarea:not(:focus) + label {
+  color: rgb(189, 188, 188);
 }
 
 button {
