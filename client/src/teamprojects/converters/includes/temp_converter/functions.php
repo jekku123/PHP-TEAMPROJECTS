@@ -15,6 +15,7 @@ function convertTemp()
         $temp = $_POST['temp'] ?? '';
         $conversion = $_POST['temp-conversion'] ?? '';
 
+
         if ($conversion && is_numeric($temp)) {
             if ($conversion == 'c-to-f') {
                 return '<span>' . round($temp, 2) . '°C is ' . round(convertToFahrenheit($temp), 2) . "°F</span>";
