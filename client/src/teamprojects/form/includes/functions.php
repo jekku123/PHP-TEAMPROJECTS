@@ -1,6 +1,6 @@
 <?php
 
-function validateInput($data)
+function sanitizeInput($data)
 {
     $data = trim($data);
     $data = stripslashes($data);
