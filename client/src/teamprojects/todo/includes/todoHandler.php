@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (!empty($_POST['update'])) {
             if (!empty($todo)) {
-                $query = "UPDATE todos SET todo = '" . $todo . "' WHERE id = $id";
+                $query = "UPDATE todos SET todo = '$todo' WHERE id = $id";
                 mysqli_query($conn, $query);
             }
         }
