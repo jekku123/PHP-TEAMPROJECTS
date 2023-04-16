@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($_POST['add']) && !empty($_POST['todo'])) {
         $todo = $_POST['todo'];
-        $query = "INSERT INTO todos(todo) VALUES ('$todo')";
+        $query = "INSERT INTO todos(todo) VALUES ('" . htmlspecialchars($todo, ENT_QUOTES) . "')";
         mysqli_query($conn, $query);
     } else if (!empty($_POST['update']) || !empty($_POST['delete'])) {
         $id = array_values($_POST)[0];
