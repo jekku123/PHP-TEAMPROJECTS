@@ -21,7 +21,7 @@
             <button type="submit">Convert</button>
         </form>
 
-        <p><?php echo $converted_temp ?></p>
+        <p><?= $converted_temp ?></p>
 
     </article>
 

@@ -10,12 +10,12 @@
 
     <div class="todos">
         <?php
-        foreach ($todos as $row) {
+        foreach ($todos as $todo) {
         ?>
             <div class="todo">
                 <form method="post">
-                    <input name="id-<?= $row["id"] ?>" value="<?= $row["id"] ?>" style="display:none">
-                    <input name="todo-<?= $row["id"] ?> " value="<?= $row["todo"] ?>">
+                    <input name="id-<?= $todo["id"] ?>" value="<?= $todo["id"] ?>" style="display:none">
+                    <input name="todo-<?= $todo["id"] ?> " value="<?= $todo["todo"] ?>">
                     <input type="submit" name="update" value="UPDATE" class="btn">
                     <input type="submit" name="delete" value="DELETE" class="btn">
                 </form>
