@@ -3,7 +3,7 @@
 
 <section>
 
-    <form method="post" action="todoHandler.php">
+    <form method="post" action="handleTodos.php">
         <input name='todo' placeholder="Insert todo..">
         <input type="submit" name="add" value="ADD" class="btn">
     </form>
