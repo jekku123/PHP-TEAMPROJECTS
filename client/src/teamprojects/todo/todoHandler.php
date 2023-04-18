@@ -1,14 +1,14 @@
 <?php
 
 include 'Database.php';
-include 'Todos.php';
+include 'TodosHandler.php';
 include 'functions.php';
 include 'dotenv.php';
 
 $db = new Database($host, $dbname, $user, $pass);
 $conn = $db->connect();
 
-$myTodos = new Todos($conn);
+$myTodos = new TodosHandler($conn);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
