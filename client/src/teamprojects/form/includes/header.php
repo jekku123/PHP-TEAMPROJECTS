@@ -4,6 +4,7 @@
   <?php include "../includes/head.php"; ?>
   <link href="../css/styles.css" rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <title>Form practice</title>
 </head>
 
