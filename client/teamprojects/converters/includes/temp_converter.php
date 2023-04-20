@@ -1,12 +1,13 @@
 <?php
+
 function convertToFahrenheit($temp)
 {
-    return (float) ($temp * 9 / 5) + 32;
+    return round((float) ($temp * 9 / 5) + 32, 2);
 }
 
 function convertToKelvin($temp)
 {
-    return (float) $temp + 273.15;
+    return round((float) $temp + 273.15, 2);
 }
 
 function convertTemp()
@@ -17,9 +18,9 @@ function convertTemp()
 
         if ($conversion && is_numeric($temp)) {
             if ($conversion == 'c-to-f') {
-                return '<span>' . round($temp, 2) . '°C is ' . round(convertToFahrenheit($temp), 2) . "°F</span>";
+                return '<span>' . $temp . '°C is ' . convertToFahrenheit($temp) . "°F</span>";
             } else {
-                return '<span>' . round($temp, 2) . '°C is ' . round(convertToKelvin($temp),) . " K</span>";
+                return '<span>' . $temp . '°C is ' . convertToKelvin($temp) . " K</span>";
             }
         }
     }

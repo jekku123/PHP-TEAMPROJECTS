@@ -6,7 +6,7 @@
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
         <fieldset>
-            <legend>Contact</legend>
+            <legend>Contact Us</legend>
             <div class="input-component">
                 <input type="text" placeholder=" " name="name" class="input-field" value="<?php echo $name; ?>" />
                 <label>Name</label>

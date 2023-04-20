@@ -1,8 +1,7 @@
 <?php include "includes/header.php"; ?>
-<?php include "includes/mass_converter/functions.php"; ?>
-<?php include "includes/temp_converter/functions.php"; ?>
-<?php include "includes/speed_converter/functions.php"; ?>
-
+<?php include "includes/mass_converter.php"; ?>
+<?php include "includes/temp_converter.php"; ?>
+<?php include "includes/speed_converter.php"; ?>
 
 <section>
 
@@ -11,7 +10,7 @@
 
         <form method="post" class="temp-form">
             <div class="selections">
-                <input type="text" name="temp" placeholder="Temp" value='<?php $keke ?>'>
+                <input type="text" name="temp" placeholder="Temp">
                 <select name="temp-conversion">
                     <option value="" disabled selected>Choose..</option>
                     <option value="c-to-f">°C to °F</option>

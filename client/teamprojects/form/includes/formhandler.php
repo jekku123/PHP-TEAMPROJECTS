@@ -31,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-
     if (empty($_POST["message"])) {
         $messageError = "Message is required";
     } else {

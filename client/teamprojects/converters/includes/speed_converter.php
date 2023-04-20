@@ -1,12 +1,13 @@
 <?php
+
 function convertToMilliSeconds($speed)
 {
-    return (float) $speed / 3.6;
+    return round((float) $speed / 3.6, 2);
 }
 
 function convertToKnots($speed)
 {
-    return (float) $speed / 1.852;
+    return round((float) $speed / 1.852, 2);
 }
 
 function convertSpeed()
@@ -17,9 +18,9 @@ function convertSpeed()
 
         if ($conversion && is_numeric($speed)) {
             if ($conversion == 'kmh-to-ms') {
-                return '<span>' . round($speed, 2) . 'km/h is ' . round(convertToMilliSeconds($speed), 2) . "m/s</span>";
+                return '<span>' . $speed . 'km/h is ' . convertToMilliSeconds($speed) . "m/s</span>";
             } else {
-                return '<span>' . round($speed, 2) . 'km/h ' . round(convertToKnots($speed), 2) . " knots</span>";
+                return '<span>' . $speed . 'km/h is ' . convertToKnots($speed) . " knots</span>";
             }
         }
     }
