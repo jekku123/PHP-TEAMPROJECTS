@@ -2,19 +2,11 @@
 
 class Database
 {
-    private $host;
-    private $dbname;
-    private $user;
-    private $pass;
+    private $host = 'db';
+    private $dbname = 'todoDB';
+    private $user = 'root';
+    private $pass = 'lionPass';
     private $conn;
-
-    function __construct($host, $dbname, $user, $pass)
-    {
-        $this->host = $host;
-        $this->dbname = $dbname;
-        $this->user = $user;
-        $this->pass = $pass;
-    }
 
     public function connect()
     {

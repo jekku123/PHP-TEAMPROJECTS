@@ -3,9 +3,8 @@
 include 'Database.php';
 include 'TodosHandler.php';
 include 'functions.php';
-include 'dotenv.php';
 
-$db = new Database($host, $dbname, $user, $pass);
+$db = new Database();
 $conn = $db->connect();
 
 $myTodos = new TodosHandler($conn);

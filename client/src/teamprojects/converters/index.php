@@ -21,9 +21,10 @@
             <button type="submit">Convert</button>
         </form>
 
-        <p><?= $converted_temp ?></p>
+        <?= '<p>Result: ' . convertTemp() . '</p>'; ?>
 
     </article>
+
 
     <article class="card">
         <h2>Speed Converter</h2>
@@ -40,8 +41,9 @@
             <button type="submit">Convert</button>
         </form>
 
-        <?= '<p>Result: ' . $converted_speed . '</p>'; ?>
+        <?= '<p>Result: ' . convertSpeed() . '</p>'; ?>
     </article>
+
 
     <article class="card">
         <h2>Mass Converter</h2>
@@ -58,7 +60,7 @@
             <button type="submit">Convert</button>
         </form>
 
-        <?= '<p>Result: ' . $converted_mass . '</p>'; ?>
+        <?= '<p>Result: ' . convertMass() . '</p>'; ?>
     </article>
 
 </section>
