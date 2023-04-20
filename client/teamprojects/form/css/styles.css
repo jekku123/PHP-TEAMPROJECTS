@@ -7,6 +7,10 @@ form {
   gap: 30px;
 }
 
+section {
+  padding: 30px;
+}
+
 form h2 {
   margin-top: 25px;
 }
@@ -26,6 +30,7 @@ legend {
   position: relative;
   border-radius: 5px;
   min-height: 50px;
+  margin: 10px;
 }
 
 label {
@@ -74,7 +79,6 @@ input:focus,
 textarea:focus {
   outline: none !important;
   border-color: var(--accent-color);
-  /* box-shadow: 0 0 10px var(--text-color); */
 }
 
 input:focus + label,

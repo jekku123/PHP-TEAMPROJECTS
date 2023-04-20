@@ -6,9 +6,19 @@ ul li {
   list-style: none;
 }
 
+section {
+  padding: 10px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
 input {
   height: 30px;
-  margin-bottom: 10px;
   border-radius: 5px;
   border: none;
   font-family: inherit;
