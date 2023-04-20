@@ -3,7 +3,7 @@
 
 <section>
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" autocomplete="off">
 
         <fieldset>
             <legend>Contact Us</legend>
