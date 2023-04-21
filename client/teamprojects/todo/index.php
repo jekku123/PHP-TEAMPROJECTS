@@ -1,6 +1,8 @@
 <?php include "post-controller.php"; ?>
 <?php include "includes/header.php"; ?>
 
+<?php $todos = $myTodos->get_all(); ?>
+
 <section>
 
     <form method="post" action="post-controller.php">
