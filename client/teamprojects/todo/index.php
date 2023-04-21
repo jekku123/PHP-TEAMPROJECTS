@@ -7,6 +7,7 @@
         <input name='todo' placeholder="Add todo..">
         <input type="submit" name="add" value="ADD" class="btn">
     </form>
+
     <div class="todos">
         <?php
         if ($todos) {
