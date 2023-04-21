@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['add']) && !empty($_POST['todo'])) {
         $todo = sanitize_input($_POST['todo']);
         $myTodos->add($todo);
-    } else if (!empty($_POST['save']) || !empty($_POST['delete'])) {
+    } else if (!empty($_POST['update']) || !empty($_POST['delete'])) {
         $id = array_values($_POST)[0];
         $todo = sanitize_input(array_values($_POST)[1]);
 
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $myTodos->delete($id);
         }
 
-        if (!empty($_POST['save']) && !empty($todo)) {
+        if (!empty($_POST['update']) && !empty($todo)) {
             $myTodos->update($id, $todo);
         }
     }

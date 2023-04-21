@@ -14,7 +14,7 @@
                 <form method="post">
                     <input name="id-<?= $todo["id"] ?>" value="<?= $todo["id"] ?>" style="display:none">
                     <input name="todo-<?= $todo["id"] ?> " value="<?= $todo["todo"] ?>">
-                    <input type="submit" name="save" value="SAVE" class="btn">
+                    <input type="submit" name="update" value="UPDATE" class="btn">
                     <input type="submit" name="delete" value="DELETE" class="btn">
                 </form>
             <?php
