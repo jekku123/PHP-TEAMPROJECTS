@@ -1,6 +1,6 @@
 <?php
 
-class TodosHandler
+class TodosModel
 {
     private $conn;
 

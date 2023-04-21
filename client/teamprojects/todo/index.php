@@ -1,9 +1,9 @@
-<?php include "post-handler.php"; ?>
+<?php include "post-controller.php"; ?>
 <?php include "includes/header.php"; ?>
 
 <section>
 
-    <form method="post" action="post-handler.php">
+    <form method="post" action="post-controller.php">
         <input name='todo' placeholder="Add todo..">
         <input type="submit" name="add" value="ADD" class="btn">
     </form>

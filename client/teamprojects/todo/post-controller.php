@@ -1,13 +1,13 @@
 <?php
 
 include 'Database.php';
-include 'TodosHandler.php';
-include 'functions.php';
+include 'TodosModel.php';
+include 'includes/functions.php';
 
 $db = new Database();
 $conn = $db->connect();
 
-$myTodos = new TodosHandler($conn);
+$myTodos = new TodosModel($conn);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
