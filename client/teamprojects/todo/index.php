@@ -1,8 +1,6 @@
 <?php include "post-handler.php"; ?>
 <?php include "includes/header.php"; ?>
 
-<?php $todos = $myTodos->get_all() ?>
-
 <section>
 
     <form method="post" action="post-handler.php">
@@ -23,7 +21,8 @@
             }
         } else {
             ?>
-            <p>Nothing to do..</p>
+            <p>Nothing to do.</p>
+            <p>Add todo to have something to do.</p>
         <?php
         }
         ?>

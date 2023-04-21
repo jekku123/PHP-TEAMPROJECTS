@@ -30,3 +30,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: index.php");
     exit;
 }
+
+$todos = $myTodos->get_all();
